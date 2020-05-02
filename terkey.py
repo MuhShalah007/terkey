@@ -11,7 +11,7 @@ def setup():
         os.mkdir('/data/data/com.termux/files/home/.termux')
     except:
         pass
-    key = "extra-keys = [['ESC','/','-','HOME','UP','END','PGUP'],['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN']]"
+    key = "extra-keys = [['ESC','|','/','HOME','UP','END','PGUP','DEL'],['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN','BKSP']]"
     open('/data/data/com.termux/files/home/.termux/termux.properties','w').write(key)
     os.system('termux-reload-settings')
 
